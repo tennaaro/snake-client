@@ -10,7 +10,6 @@ const setupInput = (conn) => {
   return stdin;
 };
 
-
 const handleUserInput = function (key) {
   if (key === '\u0003') {
     process.exit();
@@ -26,6 +25,12 @@ const handleUserInput = function (key) {
   }
   else if (key === 'd') {
     connection.write("Move: right")
+  }
+  else if (key === 'r') {
+    connection.write("Say: nom")
+  }
+  else if (key === 'e') {
+    connection.write("Say: pop")
   }
 };
 
